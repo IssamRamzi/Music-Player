@@ -53,6 +53,12 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+    
+      <dependency>
+        <groupId>org.openrndr</groupId>
+        <artifactId>openrndr-openal-jvm</artifactId>
+        <version>0.4.4-alpha4</version>
+      </dependency>
     </dependencies>
 
     <build>
@@ -75,7 +81,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.demo/com.example.demo.MusicPlayer</mainClass>
+                            <mainClass>com.ramzi.demo/com.ramzi.Main.MusicPlayer</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
